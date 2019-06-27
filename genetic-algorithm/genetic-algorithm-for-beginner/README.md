@@ -6,7 +6,7 @@ A genetic algorithm (GA) is great for finding solutions to complex search proble
 
 Algorithm of GA:
 
-![Process][process.png]
+![process](./process.png)
 
 Step 1: Generate any random routes and calculate their fitness
 value.
