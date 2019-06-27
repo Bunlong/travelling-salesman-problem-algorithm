@@ -111,14 +111,10 @@ public class GeneticAlgorithm {
         Arrays.fill(offspringChromosome, -1);
         Individual offspring = new Individual(offspringChromosome);
         // Get subset of parent chromosomes
-        int substrPos1 = (int) (Math.random() *
-        parent1.getChromosomeLength());
-        
-        int substrPos2 = (int) (Math.random() *
-        parent1.getChromosomeLength());
+        int substrPos1 = (int) (Math.random() * parent1.getChromosomeLength());
+        int substrPos2 = (int) (Math.random() * parent1.getChromosomeLength());
         // make the smaller the start and the larger the end
         final int startSubstr = Math.min(substrPos1, substrPos2);
-        
         final int endSubstr = Math.max(substrPos1, substrPos2);
         // Loop and add the sub tour from parent1 to our child
         for (int i = startSubstr; i < endSubstr; i++) {
